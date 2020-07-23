@@ -24,7 +24,7 @@ function zoom(e) {
     console.log(wheel);
     const ratio = 0.5;
     let imgScale = 1;
-    wheel > 0 ? z = z + ratio : z = z - ratio;
+    wheel > 0 ? z = z - ratio : z = z + ratio;
 
     z < 1 ? z = 1 : imgScale = 100 * z;
     z >= 20 ? z= 20 : imgScale = 100 * z;
